@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scientific calculator</title>
+    <link rel="stylesheet" href="calc1.css">
+    
+    </head>
+     <!--<body>
+        <div class="container">
+            <div class="calculator">
+                <input type="text"  id="calc" placeholder="0">
+            </div>
+            <div class="btns">
+                <div class="row">
+                    <button class="btn" onclick="Clear()">CE</button>
+                    <button class="btn">x!</button>
+                    <button class="btn" onclick="display('(')">(</button>
+                    <button class="btn" onclick="display(')')" >)</button>
+                    <button class="btn" onclick="display('%')">%</button>
+                    <button class="btn" onclick="Delete()">AC</button>
+                </div>
+                <div class="row">
+                    <button class="btn" onclick="display('sin')">sin</button>
+                    <button class="btn" onclick="display('3.14')">pi</button>
+                    <button class="btn"  onclick="display('7')">7</button>
+                    <button class="btn" onclick="display('8')" >8</button>
+                    <button class="btn"  onclick="display('9')">9</button>
+                    <button class="btn" onclick="display('/')">÷</button>
+                </div>
+                <div class="row">
+                    <button class="btn" onclick="display('cos')">cos</button>
+                    <button class="btn" onclick="display('log')">log</button>
+                    <button class="btn" onclick="display('4')">4</button>
+                    <button class="btn" onclick="display('5')">5</button>
+                    <button class="btn" onclick="display('6')">6</button>
+                    <button class="btn" onclick="display('*')">*</button>
+                </div>
+                <div class="row">
+                    <button class="btn" onclick="display('tan')">tan</button>
+                    <button class="btn" onclick="display('√')">√</button>
+                    <button class="btn" onclick="display('1')">1</button>
+                    <button class="btn" onclick="display('2')">2</button>
+                    <button class="btn" onclick="display('3')">3</button>
+                    <button class="btn" onclick="display('-')">-</button>
+                </div>
+                <div class="row">
+                    <button class="btn" onclick="display('e')">e</button>
+                    <button class="btn" onclick="display('^')">x<sup>y</sup></button>
+                    <button class="btn" onclick="display('0')">0</button>
+                    <button class="btn" onclick="display('.')">.</button>
+                    <button class="btn" onclick="calc.value=eval(calc.value);">=</button>
+                    <button class="btn" onclick="display('+')">+</button>
+                </div>
+            </div>
+        </div>
+        <script src="calc1.js"></script> 
+    </body>
+</html>-->
+<body>
+    <div class="container">
+     <div class="display">
+         <input type="text" placeholder="0" id="calc">
+     </div>
+     <div class="btns">
+        <div class="row">
+         <button  onclick="Clear()" style="background-color: rgb(0, 163, 0); color: white;font-weight: bolder;" >Cl</button>
+         <button  onclick="display('%')" class="dis1">%</button>
+         <button  onclick="display('1')">1</button>
+         <button  onclick="display('2')">2</button>
+         <button  onclick="display('3')">3</button>
+        </div>
+        <div class="row">
+            <button  onclick="mysin('sin')" class="dis1" >sin</button>             
+            <button  onclick="mydisplay('x^2')" class="dis1">x^2</button>        
+         <button  onclick="display('4')">4</button>
+         <button  onclick="display('5')">5</button>
+        <button  onclick="display('6')">6</button> 
+         </div>
+         <div class="row">
+             <button  onclick="mycos('cos')" class="dis1">cos</button>           
+            <button  onclick="square('√')"   class="dis1">√</button>            
+         <button  onclick="display('7')" >7</button>
+         <button  onclick="display('8')">8</button>
+         <button  onclick="display('9')">9</button> 
+         </div>
+         <div class="row">
+            <div class="row"> <button  onclick="mytan('tan')" class="dis1" >tan</button>
+         <button  onclick="display('/')" class="dis1" >/</button>
+         
+         
+         <button  onclick="display('*')" class="dis1" >*</button>
+            <button  onclick="display('-')"  class="dis1">-</button>
+         <button onclick="display('+')"  class="dis1">+</button>
+
+        
+         
+         </div>
+         <div class="row">
+             <button  onclick="dele()" style="background-color: red; color: white;font-weight: bolder;">Del</button>
+            <button  onclick="mylog('log')" class="dis1" >log</button>
+            
+            <button onclick="display('.')"  class="dis1">.</button>
+             <button  onclick="display('0')">0</button>
+         
+              <button  onclick="calculate()" class="equi">=</button>
+         </div>
+        
+         
+ 
+     </div>
+     </div>
+    </div>
+    <script src="calc1.js"></script>
+ </body>
+ </html>
